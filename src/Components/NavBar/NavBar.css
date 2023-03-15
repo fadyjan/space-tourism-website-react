@@ -1,0 +1,151 @@
+#NavBar{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 55px;
+    margin-top: 40px;
+    width: 96%;
+}
+
+#navbarLine{
+    display: block;
+    z-index: 1;
+    height: 1px;
+    /* width: 100%; */
+    background-color: grey;
+    border: 1px solid grey;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    margin: 0 -25px 0 64px;
+    width: 34%;
+}
+#OuterWrapperSelections{
+    visibility: visible;
+
+    width:60%;
+    height: 96px;
+    display: flex;
+    background: rgba(255,255,255,0.04);
+   
+    backdrop-filter: blur(14px);
+    align-items: center;
+}
+.LabelSelectionWrapper{
+    display: flex;
+    column-gap: 11px;
+
+    color: white;
+    font-family: "BarlowCondensed-Regular";
+    font-size: 16px;
+    letter-spacing: 2.7px;
+}
+
+#InnerWrapperSelections{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    column-gap: 9%;
+    height: min-content;
+    margin-left:123px;
+}
+
+#LogoIcon{
+    width: 48px;
+    height: 48px;
+}
+
+.SelectionIndex{
+    cursor: pointer;
+    font-family: "BarlowCondensed-Bold";
+    letter-spacing: 2.7px;
+    font-size: 16px;
+    display: block;
+}
+.SelectionName{
+    cursor: pointer;
+}
+#BurgerIconImg {
+    display: none;
+    /* position: absolute; */
+    width: 24px;
+    height: 21px;
+    right: 2rem;
+    top: 1.9rem;
+    cursor: pointer;
+  }
+
+@media (max-width:768px) {
+    #NavBar{
+        margin-left: 0;
+        margin-top: 0;
+        width: 100%;
+        column-gap: 30%;
+    }
+    #LogoIcon{
+        margin-left: 39px;
+    }
+    .SelectionIndex{
+        display: none;
+    }
+    #navbarLine{
+        display: none;
+    }
+    #OuterWrapperSelections{
+        visibility: visible;
+        width: 450px;
+        justify-content: center;
+    }
+    #InnerWrapperSelections{
+        width: 80%;
+        column-gap:8.2% ;
+        margin-left: 0;
+        justify-content: center;
+    }
+    .LabelSelectionWrapper{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 501px) {
+    #LogoIcon{
+        width: 35px;
+        height: 35px;
+        margin-left: 25px;
+    }
+    #NavBar{
+    justify-content: space-between;
+    margin-top: 24px;
+    }
+    #BurgerIconImg {
+      display: block;
+      margin-right: 24px;
+      z-index: 1;
+    }
+    #OuterWrapperSelections{
+        visibility: hidden;
+    }
+
+    #OuterWrapperSelections {
+        z-index: 1;
+        position: absolute;
+        right : 0;
+        height: 200vh;
+        padding-left: 0px;
+        width: 67%;
+      }
+
+      #InnerWrapperSelections{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        
+        height: 13%;
+        margin-top: 166%;
+    
+      }
+      .SelectionIndex{
+        display: block;
+      }
+}  
