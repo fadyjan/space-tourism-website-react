@@ -1,0 +1,138 @@
+#HomeDivWrapper{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 31.25%;
+  height: 42%;
+  color: white;
+  row-gap: 24px;
+  left: 10%;
+  bottom: 14%;
+
+}
+#HomeLabel{
+  text-align: left;
+  font-size: 18px;
+  letter-spacing: 4.72px;
+  color: #D0D6F9;
+  font-family: "BarlowCondensed-Regular";
+}
+
+#SpaceHeader{
+  font-size: 150px;
+  font-family: "Bellefair-Regular";
+  margin: 0;
+  text-align: left;
+
+}
+#HomeParagrhape{
+  font-size: 18px;
+  text-align: left;
+  font-family: "BarlowCondensed-Regular";
+  line-height: 32px;
+  margin: 0;
+  color: #D0D6F9;
+}
+
+
+#EXPLOREBTN{
+  cursor: pointer;
+  position: absolute;
+  width: 274px;
+  height: 274px;
+  background-color: white;
+  right: 11.5%;
+  bottom: 14.5%;
+  border-radius: 50%;
+  font-size: 32px;
+  letter-spacing: 2px;
+  font-family: "Bellefair-Regular";
+}
+
+
+#EXPLOREBTN:hover {
+    box-shadow: 0px 0px 0px 50px #979797;
+    transition: 0.5s;
+    border-color: transparent;
+}
+.BackGroundImage{
+    width: 100%;
+    height: 100vh;
+    object-fit: fill;
+}
+
+
+@media (max-width:768px) {
+  #HomeDivWrapper{
+    top: 19.7%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 58%;
+    height: 33.4%;
+  }
+  #HomeParagrhape{
+    font-size: 16px;
+    text-align: center;
+    line-height: 28px;
+  }
+  #HomeLabel{
+    font-size: 20px;
+    text-align: center;
+    line-height: 1;
+  }
+  #SpaceHeader{
+    line-height: 150px;
+    font-size: 20vw;
+  }
+  #EXPLOREBTN{
+    width: 242px;
+    height: 242px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width:501px) {
+  #HomeDivWrapper{
+    top: 19.7%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 90%;
+    height: 33.4%;
+  }
+
+  #HomeParagrhape{
+    font-size: 15px;
+    text-align: center;
+    line-height: 25px;
+  }
+  #HomeLabel{
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 2.7px;
+    line-height: 1;
+  }
+  #SpaceHeader{
+    line-height: 100px;
+    text-align: center;
+    font-size: 80px;
+  }
+
+  #EXPLOREBTN {
+    width: 150px;
+    height: 150px;
+    font-size: 20px;
+    letter-spacing: 1.25px;
+    color: #0B0D17;
+  }
+}
