@@ -1,10 +1,12 @@
-import React ,{useState,useEffect} from 'react'
+import React ,{useState,useEffect,useContext} from 'react'
+import { IndexSelection } from "../../App";
 import DesktopBackGroundImage from "../../Assets/home/background-home-desktop.jpg"
 import TabletBackGroundImage from "../../Assets/home/background-home-tablet.jpg"
 import MobileBackGroundImage from "../../Assets/home/background-home-mobile.jpg"
 import "./HomePage.css"
 const HomePage = () => {
     const [ stateImage, setStateImage ] =useState(window.innerWidth);
+    const index = useContext(IndexSelection)
     useEffect(() => {
       const handleWindowResize = () => {
           setStateImage(window.innerWidth)
@@ -35,7 +37,7 @@ const HomePage = () => {
       <p id='HomeParagrhape'>Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!</p>
     </div>
     <img className="BackGroundImage" src={ChooseBackGround()} ></img>
-    <button id='EXPLOREBTN'>EXPLORE</button>
+    <button id='EXPLOREBTN' onClick={()=>{index.IndexHandler("Destination")}}>EXPLORE</button>
     </>
   )
 }

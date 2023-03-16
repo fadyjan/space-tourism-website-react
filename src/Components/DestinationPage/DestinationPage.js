@@ -3,7 +3,7 @@ import "./DestinationPage.css";
 import DesktopBackGroundImage from "../../Assets/destination/background-destination-desktop.jpg";
 import TabletBackGroundImage from "../../Assets/destination/background-destination-mobile.jpg";
 import MobileBackGroundImage from "../../Assets/destination/background-destination-tablet.jpg";
-import MoonImage from "../../Assets/destination/image-moon.png";
+
 import { Data } from "../../App";
 
 const DestinationPage = () => {
