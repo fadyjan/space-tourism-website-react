@@ -1,0 +1,207 @@
+.Title{
+    position: absolute;
+    left: 11.5%;
+    top: 23.5%;
+}
+.TitleNumber{
+    font-size: 28px;
+    font-family: "BarlowCondensed-Bold";
+    letter-spacing: 4.72px;
+    mix-blend-mode: normal;
+opacity: 0.25;
+   color: white;
+}
+.TitleName{
+    margin-left: 26px;
+    font-size: 28px;
+    letter-spacing: 4.72px;
+    color: white;
+    font-family: "BarlowCondensed-Regular";
+}
+#PlantImage{
+    width: 42%;
+    height:42%;
+    max-width: 450px;
+    max-height: 450px;
+}
+
+.MainContainer{
+    position: absolute;
+    bottom: 12.5%;
+    width: 70%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.PlantInformation{
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+}
+#PlantNavBar{
+    display: flex;
+    column-gap: 35px;
+    justify-content: flex-start;
+}
+
+.Navbarplants{
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    color: #D0D6F9;
+    font-family: "BarlowCondensed-Regular";
+    cursor: pointer;
+    padding-bottom: 12px;
+    border: 3px solid transparent;
+    display: block;
+}
+.Navbarplants:hover{
+    border-bottom: 1px solid white;
+}
+#PlantName{
+    font-size: 100px;
+    color: white;
+    text-align: left;  
+    margin-top: 2.9%;
+    margin-bottom: 2.9%;  
+}
+
+#PlantDescreption{
+    font-size: 18px;
+    line-height: 32px;
+    min-height: 128px;
+    color: #D0D6F9;
+    font-family: "BarlowCondensed-Regular";
+    margin: 0;
+    text-align: left; 
+}
+#Line{
+    border : 1px solid #383B4B;
+    margin-top: 54px;
+    margin-bottom: 28px;
+    width: 100%;
+}
+#InfoLabelsWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.InnerInfoLabelsWrapper{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.titleLabel{
+    text-align: start;
+    font-size: 14px;
+    font-family: "BarlowCondensed-Regular";
+    color: #D0D6F9;
+    margin-bottom: 12px;
+}
+.numberLabel{
+    text-align: start;
+    color: white;
+    font-size: 28px;
+}
+
+@media (max-width:768px) {
+    .Title{
+        top: 13.2%;
+        left: 39px;
+
+    }
+    .TitleNumber{
+        font-size: 20px;
+    }
+    .TitleName{
+        font-size: 20px;
+        letter-spacing: 3.38px;
+    }
+    .MainContainer{
+        flex-direction: column;
+        align-items: center;
+        bottom: 6%;
+    }
+    #PlantImage{
+        width: 40%;
+        height:40%;
+        margin-bottom: 53px;
+    }
+    #PlantNavBar{
+        justify-content: center;
+    }
+    .PlantInformation {
+    width: 100%;
+    }
+    .Navbarplants{
+        font-size: 16px;
+    }
+    #PlantName{
+        text-align: center;
+        font-size: 80px;
+        font-family: "Bellefair-Regular";
+    }
+    #PlantDescreption{
+        font-size: 16px;
+        text-align: center;
+        min-height: 128px;
+    }
+    .InfoLabels{
+        text-align: center;
+    }
+
+}
+@media (max-width:501px){
+    .TitleNumber{
+        font-size: 16px;
+    }
+    .TitleName{
+        font-size: 16px;
+    }
+
+    .Title {
+        top: 10.5%;
+        left: 0px;
+        right: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #PlantImage{
+        margin-bottom: 26px;
+    }
+    #PlantName{
+        font-size: 56px;
+        margin: 0;
+        margin-top: 20px;
+        margin-bottom: 1px;
+    }
+    #PlantDescreption{
+        font-size: 15px;
+    }
+    .MainContainer{
+        bottom: 56px;
+        width: 90%;
+    }
+    #InfoLabelsWrapper{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #Line{
+        margin-top:2vh;
+        margin-bottom: 2vh;
+    }
+    .InnerInfoLabelsWrapper{
+        margin-top:2vh ;
+    }
+}
+
+@media (max-width:400px){
+    .MainContainer {
+        bottom: 12px;
+
+    }
+}
