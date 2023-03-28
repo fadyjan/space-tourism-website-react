@@ -1,9 +1,9 @@
 import React ,{useEffect,useContext ,useState} from "react";
 import "./NavBar.css";
 import { IndexSelection } from "../../App";
-import LogoIcon from "../../Assets/shared/logo.svg";
-import BurgerIcon from "../../Assets/shared/icon-hamburger.svg"
-import  CloseICon from "../../Assets/shared/icon-close.svg"
+import LogoIcon from "../../assets/shared/logo.svg";
+import BurgerIcon from "../../assets/shared/icon-hamburger.svg"
+import  CloseICon from "../../assets/shared/icon-close.svg"
 const NavBar = () => {
   const [IconMenu, seticonMenu] = useState(true)
     const index = useContext(IndexSelection)

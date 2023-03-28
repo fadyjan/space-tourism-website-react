@@ -1,18 +1,19 @@
 import React, { useState, useEffect, useContext } from "react";
 import "./CrewPage.css";
-import DesktopBackGroundImage from "../../Assets/crew/background-crew-desktop.jpg";
-import TabletBackGroundImage from "../../Assets/crew/background-crew-tablet.jpg";
-import MobileBackGroundImage from "../../Assets/crew/background-crew-mobile.jpg";
+import DesktopBackGroundImage from "../../assets/crew/background-crew-desktop.jpg";
+import TabletBackGroundImage from "../../assets/crew/background-crew-tablet.jpg";
+import MobileBackGroundImage from "../../assets/crew/background-crew-mobile.jpg";
 
 import { Data } from "../../App";
 
 const CrewPage = () => {
   const data = useContext(Data);
-  console.log(data.AppData);
   const CrewData = data.AppData.crew;
   const [stateImage, setStateImage] = useState(window.innerWidth);
   const [navigatorstate, setNavigatorState] = useState("Douglas Hurley");
   const [selectedCrew, setSelectedCrew] = useState(CrewData[0]);
+  console.log(selectedCrew.images.png);
+
   useEffect(() => {
     const handleWindowResize = () => {
       setStateImage(window.innerWidth);
