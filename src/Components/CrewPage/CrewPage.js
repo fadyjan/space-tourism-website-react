@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useContext } from "react";
 import "./CrewPage.css";
-import DesktopBackGroundImage from "../../assets/crew/background-crew-desktop.jpg";
-import TabletBackGroundImage from "../../assets/crew/background-crew-tablet.jpg";
-import MobileBackGroundImage from "../../assets/crew/background-crew-mobile.jpg";
+import DesktopBackGroundImage from "../../Assets/crew/background-crew-desktop.jpg";
+import TabletBackGroundImage from "../../Assets/crew/background-crew-tablet.jpg";
+import MobileBackGroundImage from "../../Assets/crew/background-crew-mobile.jpg";
 
 import { Data } from "../../App";
 
