@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useContext } from "react";
 import "./DestinationPage.css";
-import DesktopBackGroundImage from "../../Assets/destination/background-destination-desktop.jpg";
-import TabletBackGroundImage from "../../Assets/destination/background-destination-mobile.jpg";
-import MobileBackGroundImage from "../../Assets/destination/background-destination-tablet.jpg";
+import DesktopBackGroundImage from "../../assets/destination/background-destination-desktop.jpg";
+import TabletBackGroundImage from "../../assets/destination/background-destination-mobile.jpg";
+import MobileBackGroundImage from "../../assets/destination/background-destination-tablet.jpg";
 
 import { Data } from "../../App";
 

@@ -1,8 +1,8 @@
 import React ,{useState,useEffect,useContext} from 'react'
 import { IndexSelection } from "../../App";
-import DesktopBackGroundImage from "../../Assets/home/background-home-desktop.jpg"
-import TabletBackGroundImage from "../../Assets/home/background-home-tablet.jpg"
-import MobileBackGroundImage from "../../Assets/home/background-home-mobile.jpg"
+import DesktopBackGroundImage from "../../assets/home/background-home-desktop.jpg"
+import TabletBackGroundImage from "../../assets/home/background-home-tablet.jpg"
+import MobileBackGroundImage from "../../assets/home/background-home-mobile.jpg"
 import "./HomePage.css"
 const HomePage = () => {
     const [ stateImage, setStateImage ] =useState(window.innerWidth);

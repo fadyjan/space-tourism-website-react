@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useContext } from "react";
 import "./TechnologyPage.css";
-import DesktopBackGroundImage from "../../Assets/technology/background-technology-desktop.jpg";
-import TabletBackGroundImage from "../../Assets/technology/background-technology-tablet.jpg";
-import MobileBackGroundImage from "../../Assets/technology/background-technology-mobile.jpg";
+import DesktopBackGroundImage from "../../assets/technology/background-technology-desktop.jpg";
+import TabletBackGroundImage from "../../assets/technology/background-technology-tablet.jpg";
+import MobileBackGroundImage from "../../assets/technology/background-technology-mobile.jpg";
 
 import { Data } from "../../App";
 
