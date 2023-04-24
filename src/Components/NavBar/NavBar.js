@@ -41,19 +41,19 @@ const NavBar = () => {
       <div id="navbarLine"></div>
       <div id="OuterWrapperSelections">
         <div id="InnerWrapperSelections">
-          <div className="LabelSelectionWrapper" onClick={handleOnNavBarClick}>
+          <div className="LabelSelectionWrapper"  indexname = "Home" onClick={handleOnNavBarClick}>
             <label indexname = "Home" className="SelectionIndex">00</label>
             <label indexname = "Home" className="SelectionName">Home</label>
           </div>
-          <div className="LabelSelectionWrapper" onClick={handleOnNavBarClick}>
+          <div className="LabelSelectionWrapper"  indexname = "Destination"  onClick={handleOnNavBarClick}>
             <label indexname = "Destination" className="SelectionIndex">01</label>
             <label indexname = "Destination" className="SelectionName">Destination</label>
           </div>
-          <div className="LabelSelectionWrapper" onClick={handleOnNavBarClick}>
+          <div className="LabelSelectionWrapper"  indexname = "Crew"  onClick={handleOnNavBarClick}>
             <label indexname = "Crew" className="SelectionIndex">02</label>
             <label indexname = "Crew" className="SelectionName">Crew</label>
           </div>
-          <div className="LabelSelectionWrapper" onClick={handleOnNavBarClick}>
+          <div className="LabelSelectionWrapper"   indexname = "Technology"  onClick={handleOnNavBarClick}>
             <label  indexname = "Technology" className="SelectionIndex">03</label>
             <label  indexname = "Technology" className="SelectionName">Technology</label>
           </div>
