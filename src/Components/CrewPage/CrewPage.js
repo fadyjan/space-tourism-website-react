@@ -12,7 +12,6 @@ const CrewPage = () => {
   const [stateImage, setStateImage] = useState(window.innerWidth);
   const [navigatorstate, setNavigatorState] = useState("Douglas Hurley");
   const [selectedCrew, setSelectedCrew] = useState(CrewData[0]);
-  console.log(selectedCrew.images.png);
 
   useEffect(() => {
     const handleWindowResize = () => {
@@ -28,7 +27,6 @@ const CrewPage = () => {
     const SelectedDestination = CrewData.filter((record) => {
       return record.name === navigatorstate;
     });
-    console.log(SelectedDestination[0]);
     setSelectedCrew(SelectedDestination[0]);
   }, [navigatorstate]);
 
